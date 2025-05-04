@@ -11,9 +11,7 @@ import React, {
 } from "react";
 import dynamic from "next/dynamic";
 import "react-quill-new/dist/quill.snow.css";
-import { createArticle } from "@/action/create-articles";
 import type { Articles } from "@/lib/generated/prisma";
-import Image from "next/image";
 import { editArticle } from "@/action/edit-article";
 
 const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });

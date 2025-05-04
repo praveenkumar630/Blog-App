@@ -12,7 +12,7 @@ import React, {
 import dynamic from "next/dynamic";
 import "react-quill-new/dist/quill.snow.css";
 import { createArticle } from "@/action/create-articles";
-import { Span } from "next/dist/trace";
+
 
 const ReactQuill = dynamic(() => import("react-quill-new"), { ssr: false });
 
@@ -61,9 +61,9 @@ const CreateArticlesPage = () => {
                 className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
               >
                 <option value="">Select category</option>
-                <option value="technology">Technology</option>
-                <option value="programming">Programming</option>
-                <option value="web-development">Web Development</option>
+                <option value="Technology">Technology</option>
+                <option value="Programming">Programming</option>
+                <option value="Web-development">Web Development</option>
               </select>
               {formState.errors.category && (
                 <span className="text-red-800 text-sm">

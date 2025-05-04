@@ -1,7 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card } from "@/components/ui/card";
 import type { Prisma } from "@/lib/generated/prisma";
-import { fetchArticleByQuery } from "@/lib/query/fetch-article-by-query";
 import { Search } from "lucide-react";
 
 import Image from "next/image";
